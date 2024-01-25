@@ -1,0 +1,7 @@
+.fwdBtn {
+  display: block;
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
