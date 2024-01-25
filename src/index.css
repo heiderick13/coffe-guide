@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5;
+  font-weight: 400;
+
+  --primary-color: hsla(332, 90%, 33%, 1);
+  --light-green: hsla(159, 46%, 71%, 1);
+  --dark-green: hsla(153, 79%, 8%, 1);
+  --white-greyish: hsla(210, 20%, 96%, 1);
+  --black: hsla(0, 89%, 4%, 1);
+}
+
+body {
+  font-size: 1.6rem;
+}
