@@ -1,0 +1,28 @@
+.load-page {
+  background: hsla(332, 90%, 15%, 1);
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-logo {
+  animation: myAnim 1.5s ease 0s 10 normal forwards;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
