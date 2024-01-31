@@ -24,3 +24,54 @@ body {
   border-radius: 0.3rem;
   border: 1px solid var(--primary-color);
 }
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 701px) {
+  .hidden {
+    display: block;
+  }
+
+  .construction-container {
+    background-color: hsla(332, 90%, 15%, 1);
+
+    position: absolute;
+    inset: 0;
+
+    text-align: center;
+  }
+  .construction-container h1 {
+    color: var(--white-greyish);
+  }
+
+  .construction {
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .construction-dialog {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+    padding: 1rem;
+
+    max-width: 30%;
+    min-height: 10rem;
+    background-color: var(--white-greyish);
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 75%,
+      50% 75%,
+      25% 100%,
+      25% 75%,
+      0% 75%
+    );
+  }
+}

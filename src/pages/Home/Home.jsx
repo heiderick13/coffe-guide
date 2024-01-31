@@ -1,7 +1,5 @@
 import "./Home.css";
 
-import FwdBtn from "../../components/FwdBtn/FwdBtn";
-import LrgBtn from "../../components/LrgBtn/LrgBtn";
 import LoadPage from "../../components/LoadPage/LoadPage";
 import { useState } from "react";
 
@@ -12,7 +10,24 @@ function Home() {
     setIsLoading(false);
   }, 2000);
 
-  return <>{iisLoading && <LoadPage />}</>;
+  return (
+    <>
+      {iisLoading && <LoadPage />}
+      <div className="construction-container hidden">
+        <a
+          href="https://storyset.com/transport"
+          target="blank"
+          title="Transport illustrations by Storyset"
+        >
+          <img className="construction hidden" src="/construction.svg" alt="" />
+        </a>
+        <h1>Página em construção 😓</h1>
+        <div className="construction-dialog">
+          Utilize um smartphone ou o "dev tools" para visualizar o conteúdo.
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Home;
